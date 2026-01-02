@@ -1,0 +1,42 @@
+# GHDL build files
+*.o
+*.cf
+work-obj93.cf
+work-obj08.cf
+
+# Simulation outputs
+*.vcd
+*.ghw
+*.wlf
+
+# ModelSim
+work/
+transcript
+vsim.wlf
+modelsim.ini
+
+# Vivado
+*.jou
+*.log
+.Xil/
+*.runs/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+
+# Quartus
+db/
+incremental_db/
+output_files/
+*.qws
+
+# macOS
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.DS_Store
