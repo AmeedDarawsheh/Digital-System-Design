@@ -58,4 +58,3 @@ BEGIN
     FA2 : fulladder PORT MAP(a => A(2), b => B(2), c_in => carryInBlock(2), s => Sum(2), c_out => carryInBlock(3));
     FA3 : fulladder PORT MAP(a => A(3), b => B(3), c_in => carryInBlock(3), s => Sum(3), c_out => carryInBlock(4));
     Cout <= carryInBlock(4);
-END Behavioral;

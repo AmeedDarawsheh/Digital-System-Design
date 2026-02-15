@@ -1,26 +1,24 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
+-- Company:
+-- Engineer:
+--
 -- Create Date: 02/08/2026 02:13:01 PM
--- Design Name: 
+-- Design Name:
 -- Module Name: halfadder - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
+-- Project Name:
+-- Target Devices:
+-- Tool Versions:
+-- Description:
+--
+-- Dependencies:
+--
 -- Revision:
 -- Revision 0.01 - File Created
 -- Additional Comments:
--- 
+--
 ----------------------------------------------------------------------------------
-
-
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -31,18 +29,19 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity halfadder is
-    Port ( a : in STD_LOGIC;
-           b : in STD_LOGIC;
-           s : out STD_LOGIC;
-           c : out STD_LOGIC);
-end halfadder;
+ENTITY halfadder IS
+    PORT (
+        a : IN STD_LOGIC;
+        b : IN STD_LOGIC;
+        s : OUT STD_LOGIC;
+        c : OUT STD_LOGIC);
+END halfadder;
 
-architecture Behavioral of halfadder is
+ARCHITECTURE Behavioral OF halfadder IS
 
-begin
+BEGIN
 
-s <= a xor b; 
-c <= a and b ;
+    s <= a XOR b;
+    c <= a AND b;
 
-end Behavioral;
+END Behavioral;
